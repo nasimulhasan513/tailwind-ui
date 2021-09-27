@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700|Grand+Hotel&display=swap&effect=shadow-multiple|anaglyph|fire-animation');
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    font-family: 'Grand Hotel', cursive;
+}
