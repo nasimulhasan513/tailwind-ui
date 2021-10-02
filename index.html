@@ -10,25 +10,33 @@
     <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="./public/custom.css">
 </head>
-<body class="bg-gradient-to-tr from-gray-700 to-gray-900 min-h-screen">
-    <nav class="bg-gray-100 py-8">
-        <div class="container mx-auto flex justify-between">
+<body class="min-h-screen bg-gradient-to-tr from-gray-700 to-gray-900">
+    <nav class="py-8 bg-gray-100">
+        <div class="container flex justify-between mx-auto">
         <div class="flex items-center gap-3">
-        <span class="material-icons-outlined text-4xl">
+        <span class="text-4xl material-icons-outlined">
 photo_camera
 </span> <h1 class="text-4xl font-semibold font-effect-anaglyph logo"> Instagram</h1>
         </div>
         <div>
-            <a href="#" class="inline-block transition duration-200 transform hover:scale-75 bg-blue-500 px-4 py-2 text-white font-semibold rounded  hover:bg-gray-200 hover:text-gray-800 hover:border-black border">Home</a>
-            <a href="#" class="inline-block transition duration-200 transform hover:scale-75 bg-blue-500 px-4 py-2 text-white font-semibold rounded  hover:bg-gray-200 hover:text-gray-800 hover:border-black border">Contact</a>
+            <a href="#" class="inline-block px-4 py-2 font-semibold text-white transition duration-200 transform bg-blue-500 border rounded hover:scale-75 hover:bg-gray-200 hover:text-gray-800 hover:border-black">Home</a>
+            <a href="#" class="inline-block px-4 py-2 font-semibold text-white transition duration-200 transform bg-blue-500 border rounded hover:scale-75 hover:bg-gray-200 hover:text-gray-800 hover:border-black">Contact</a>
         </div>
     </div>
     </nav>
-    <div class="mt-10 text-center space-y-10">
-        <h2 class="text-white font-bold text-6xl font-effect-fire-animation">Google</h2>
-        <h2 class="text-white font-bold text-6xl font-effect-anaglyph">Google</h2>
-        <h2 class="text-white font-bold text-6xl font-effect-shadow-multiple">Google</h2>
+    <div class="mt-10 space-y-10 text-center">
+        <h2 class="text-6xl font-bold text-white font-effect-fire-animation">Google</h2>
+        <h2 class="text-6xl font-bold text-white font-effect-anaglyph">Google</h2>
+        <h2 class="text-6xl font-bold text-white font-effect-shadow-multiple">Google</h2>
         
     </div>
+    <script>
+    
+      
+        let data =  JSON.parse(localStorage.getItem('data'))
+
+       localStorage.setItem('data',JSON.stringify([...data,{name:"KOI", id: 50},{name:"KI", id: 80}]))
+
+    </script>
 </body>
 </html>
